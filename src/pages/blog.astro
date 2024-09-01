@@ -1,12 +1,31 @@
-<body>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+---
+import '../styles/global.css';
+const pageTitle = "My Blog";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
+
+  <body>
+
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
   
-  <h1>Blog</h1>
-  <h2>... and my new Astro site!</h2>
+    <h1>{pageTitle}</h1>
+    <h2>... and my new Astro site!</h2>
 
-  <p>this is the blog page about my firs astro experiences.</p>
+    <p>this is the blog page about my firs astro experiences.</p>
 
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-</body>
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <ul>
+      <li><a href="/posts/post-1/">Post 1</a></li>
+      <li><a href="/posts/post-2/">Post 2</a></li>
+      <li><a href="/posts/post-3/">Post 3</a></li>
+    </ul>
+    <p>NOTE: To continue this tuto <a href="https://docs.astro.build/en/tutorial/3-components/" target="_blank">HERE</a></p>
+  </body>
+</html>
